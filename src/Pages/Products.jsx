@@ -56,7 +56,7 @@ const Products = () => {
               </div>
               <div className=' flex flex-wrap gap-10 w-full  h-[90vh] overflow-y-scroll py-5 px-5'>
                 {
-                  (isSearching ? filteredSearchData : filterdData)?.map((item, index) => (
+                  (isSearching ? filteredSearchData  : filterdData)?.map((item, index) => (
                     <div key={index}>
                       <ProductCard item={item} />
                     </div>

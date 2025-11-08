@@ -43,7 +43,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className='w-full h-full p-1  bg-zinc-900'>
+    <div className='w-full h-full p-0.5  bg-[#ECDFCC]'>
       <Navbar location={location} getLocation={getLocation} isDialogueOpen={isDialogueOpen} toggleDialogue={toggleDialogue} />
       <Routes>
         <Route path='/' element={<Home />} />

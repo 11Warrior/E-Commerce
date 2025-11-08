@@ -13,6 +13,7 @@ const FilterSidebar = ({rate, setRate, price, setPrice, checkedCategory, setChec
             <div className=" w-full flex items-center justify-center text-3xl font-bold p-5 " style={{ borderBottomColor: "#3B3B3B", borderBottomWidth: 2 }}>
                 Filter Products
             </div>
+            
             <div className="options p-2 w-full">
                 <input type="text" placeholder='Search...' value={search} onChange={(e) => (handleSearchChange(e))} className='p-2  outline-none w-full bg-zinc-800' style={{ borderWidth: 2, borderColor: 'black' }} />
                 {/**Category based */}

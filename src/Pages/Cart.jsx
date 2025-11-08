@@ -16,13 +16,14 @@ const Cart = () => {
 
   const handleIncDec = (action, product) => {
     //to be imp
-    const updatedCart = cartItems.map((item) => {
+    let updatedCart = cartItems.map((item) => {
       if (item.id === product.id) {
         const updatedQuantity = action === "+" ? item.quantity + 1 : item.quantity - 1;
         return { ...item, quantity: updatedQuantity };
       }
       return item;
     }).filter((item) => item.quantity > 0);
+
 
     setCartItems(updatedCart);
   }

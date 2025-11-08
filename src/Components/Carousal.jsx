@@ -19,7 +19,7 @@ const Carousal = () => {
         autoplay: true,
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1500,
         pauseOnHover: false,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -33,7 +33,7 @@ const Carousal = () => {
                     data?.slice(0, 7)?.map((item, index) => {
                         return (
                             <div key={index}>
-                                <div className="flex  w-full h-[90vh]">
+                                <div className="flex  w-full h-[90vh] text-black">
                                     <div className="imageWrapper h-full w-[50%] flex items-center justify-center  ">
                                         <img
                                             className="w-[40%] h-full object-contain hover:scale-130 transition-all cursor-pointer duration-200"

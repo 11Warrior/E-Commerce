@@ -13,8 +13,8 @@ const Navbar = ({ location, getLocation, isDialogueOpen, toggleDialogue }) => {
     const {cartItems} = useCart();
 
     return (
-        <div className='w-full h-[8vh] rounded-t-3xl rounded-b-3xl overflow-hidden  pt-3'>
-            <div className='relative w-full h-full bg-[#fff] flex justify-between px-20 items-center'>
+        <div className='w-full h-[8vh]   overflow-hidden '>
+            <div className='relative rounded-3xl w-full h-full bg-[#697565] flex justify-between px-20 items-center'>
                 <div className="logoWrapper text-3xl flex gap-4 items-center">
                     <Link to={'/'}>
                         <h1>Zaptro</h1>
